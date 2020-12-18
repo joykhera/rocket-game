@@ -18,7 +18,7 @@ export const space = {
     },
 
     move(ctx){
-        this.moverSpeed = 0.1
+        this.moverSpeed = 0.075
 
         if (this.moverSizeY <= this.sizeY - this.borderSize && 
         this.moverY >= this.y) pressedKeys.space = false

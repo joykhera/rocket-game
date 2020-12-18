@@ -18,7 +18,7 @@ export const shift = {
     },
 
     move(){
-        this.moverSpeed = 0.15
+        this.moverSpeed = 0.125
 
         if (this.moverSizeY <= this.sizeY - this.borderSize && 
         this.moverY >= this.y) pressedKeys.shift = false
