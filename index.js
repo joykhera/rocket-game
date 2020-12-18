@@ -27,4 +27,4 @@ import { score } from './score.js'
         score(ctx);
         window.requestAnimationFrame(update);
     }
-    window.requestAnimationFrame(update);
+    update()
