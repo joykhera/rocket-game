@@ -1,7 +1,7 @@
 window.rocks = [];
 window.rocksCount = 1;
 window.rocksHit = 0;
-let time = 5000
+let timeCount = 5000
 
 class Rock{
     constructor(){
@@ -23,6 +23,7 @@ class Rock{
 
     move(){
         this.y += this.speed;
+        console.log(this.speed)
         if(this.y + this.size >= canvas.height && !this.gameOver){
             location.reload()
             this.gameOver = true
@@ -42,4 +43,4 @@ setInterval(function(){
     rocksCount++;
     timeCount += 500;
     for(const rock of rocks)rock.speed += 0.1
-}, time);
+}, timeCount);
