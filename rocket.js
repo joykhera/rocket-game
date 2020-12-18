@@ -1,7 +1,8 @@
 import { pressedKeys } from './input.js'
+const rocketImg = new Image()
+rocketImg.src = "https://www.freeiconspng.com/thumbs/rocket-ship-png/rocket-ship-png-20.png"
 
 export let rocket = {
-    rocket: new Image(),
     x: canvas.width / 2,
     y: canvas.height - 300,
     sizeX: 100,
@@ -14,8 +15,7 @@ export let rocket = {
     },
 
     draw(ctx){
-        this.rocket.src = "https://www.freeiconspng.com/thumbs/rocket-ship-png/rocket-ship-png-20.png"
-        ctx.drawImage(this.rocket, this.x, this.y, this.sizeX, this.sizeY);
+        ctx.drawImage(rocketImg, this.x, this.y, this.sizeX, this.sizeY);
     },
 
     move(){
